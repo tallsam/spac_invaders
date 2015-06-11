@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>Test Game</title>
+    <link href="css/styles.css" media="all" rel="stylesheet" type="text/css"/>
+    <script language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js" type="text/javascript"></script>
+    <script language="javascript" src="js/jquery.hotkeys.js" type="text/javascript"></script>
+    <script language="javascript" src="js/key_status.js" type="text/javascript"></script>
+    <script language="javascript" src="js/util.js" type="text/javascript"></script>
+    <script language="javascript" src="js/sprite.js" type="text/javascript"></script>
+    <script language="javascript" src="js/sound.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <h1>My Test Game</h1>
+    <script type='text/javascript'>
+
+      var CANVAS_WIDTH = 480;
+      var CANVAS_HEIGHT = 320;
+      var canvasElement = $("<canvas width='" + CANVAS_WIDTH + "' height='" + CANVAS_HEIGHT + "'></canvas>");
+      var canvas = canvasElement.get(0).getContext("2d");
+      canvasElement.appendTo('body');
+
+      var FPS = 30;
+      setInterval(function() {
+          update();
+          draw();
+        }, 1000/FPS);
+
+      function draw() {
+      }
+
+      function update() {
+      }
+      
+    </script> 
+  </body>
+</html>
